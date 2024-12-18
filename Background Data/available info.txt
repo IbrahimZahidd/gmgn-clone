@@ -1,0 +1,1432 @@
+Full 100% clone  / Fork of https://gmgn.ai/?chain=sol
+
+Skills:
+
+Cryptocurrency
+Blockchain
+Bitcoin
+Ethereum
+API
+Solana
+
+Full 100% clone / Fork of https://gmgn.ai/?chain=sol
+
+Skills Required:
+- Cryptocurrency
+- Blockchain
+- Bitcoin
+- Ethereum 
+- API
+- Solana
+
+Key Components to Build:
+
+1. Navigation & Header
+- GMGN logo
+- Main menu (Meme, New pair, Trending, CopyTrade, Holding, Follow)
+- Search functionality for token/contract/wallet
+- SOL network indicator & price
+- Wallet connect integration
+
+2. Trading Dashboard
+- Time interval filters (1m, 5m, 1h, 6h, 24h)
+- NextBC integration
+- Token listing table with:
+  * Token info (name, icon, contract)
+  * Age tracking
+  * Liquidity & Market Cap
+  * BlueChip scoring
+  * Holder analytics
+  * Smart Money indicators
+  * Transaction metrics
+  * Volume analysis
+  * Price data & changes
+  * Degen Audit status
+  * Quick buy functionality
+
+3. Bottom Features
+- Sniper tool with notifications
+- Following system
+- Referral system
+- Educational resources (Academy)
+- Documentation (About, API)
+- Bot integration
+- Real-time SOL price tracker
+
+Recommended Free Tech Stack:
+- Frontend: Next.js
+- Styling: Tailwind CSS + shadcn/ui
+- Charts: TradingView lightweight charts
+- Data Fetching: SWR/React Query
+- Blockchain: Solana Web3.js
+- Database: MongoDB
+- Hosting: Vercel/Netlify
+
+
+// ... previous content remains ...
+
+4. Meme Token Dashboard
+- Top Navigation Categories:
+  * Pump
+  * Moonshot
+  * New Creation
+  * Completing
+  * Soaring
+  * Completed
+  * Pump Alert feature
+
+- Three-Column Layout:
+  1. New Creations Section:
+    * Token icon and name
+    * Time since creation
+    * Percentage changes
+    * Transaction count
+    * Volume (V)
+    * Market Cap (MC)
+    * Buy button
+
+  2. Completing Section:
+    * Similar metrics as New Creations
+    * Additional completion percentage
+    * Status indicators (X, verified marks)
+    * Transaction history
+
+  3. Completed Section:
+    * Extended statistics
+    * Run indicators
+    * Larger transaction volumes
+    * Final market performance
+
+Additional Data Points:
+- Token verification status
+- Social/telegram links
+- Price movement indicators
+- Quick Buy integration
+- Filter options for each column
+
+Technical Requirements:
+- Real-time data updates
+- Websocket connections for live pricing
+- Token contract interaction
+- Multi-column responsive layout
+- Sort and filter functionality
+
+
+// ... previous content remains ...
+
+5. New Pair Dashboard
+- Top Navigation:
+  * Dashboard/New pair tabs
+  * Time filters (1m, 5m, 1h, 6h, 24h)
+  * Token type filters (Raydium, Pump, Moonshot)
+  * Filter Risks & Quick Buy options
+
+- Three-Column Layout:
+  1. New Pool Section:
+    * Token icon and name
+    * Time since creation
+    * Verification checkmarks (✓/✗)
+    * Initial percentage metrics
+    * Social/website links
+    * Liquidity info
+    * Transaction counts
+    * Volume & Market Cap
+
+  2. Burnt Section:
+    * Liquidity burn status
+    * Run indicators
+    * Price changes
+    * Transaction metrics
+    * Market data (V, MC)
+    * Contract verification status
+
+  3. DEXScreener Spent Section:
+    * Extended financial metrics
+    * Higher transaction volumes
+    * Liquidity amounts
+    * Holder counts
+    * Comprehensive market data
+
+Additional Features:
+- Buy buttons for each token
+- Filter options per column
+- Token verification indicators
+- Social/contract links
+- Real-time price updates
+- Market cap tracking
+- Transaction monitoring
+
+Technical Requirements:
+- DEX integration
+- Liquidity pool monitoring
+- Contract verification checks
+- Real-time data feeds
+- Token price calculations
+
+6. Trending Dashboard
+- Top Navigation:
+  * Trending/NextBC tabs
+  * Time interval filters (1m, 5m, 1h, 6h, 24h)
+  * Filter Risks & Quick Buy options
+
+- Detailed Token Table with Columns:
+  * Token info (icon, name, contract)
+  * Age tracking
+  * Liquidity/Market Cap metrics
+  * BlueChip score
+  * Holders count with ratio (e.g., 24,599/19,820)
+  * Smart Money/KOL indicators
+  * 1h Transaction count
+  * 1h Volume
+  * Price in USD
+  * Percentage changes (1m%, 5m%, 1h%)
+  * Degen Audit status
+  * DEV indicators
+
+- Token Row Features:
+  * Favorite/Star option
+  * Token verification badges
+  * Social media links
+  * Contract links
+  * Quick Buy button
+  * Additional actions (Sell All, HODL, Add)
+
+- Status Indicators:
+  * NoMint verification
+  * Blacklist status
+  * Burnt status
+  * Top 10 tracking
+  * Insiders information
+
+Technical Requirements:
+- Real-time price updates
+- Sorting functionality for all columns
+- Filter system for risk management
+- Token contract verification
+- Wallet integration for quick trades
+- Data aggregation from multiple sources
+
+7. CopyTrade Dashboard
+- Top Navigation:
+  * Rank & CopyTrade tabs
+  * 0-Latency Alert feature
+  * Filter categories (All, Pump SM, Smart Money, Fresh Wallet, KOL/VC, Sniper)
+
+- Detailed Trading Table with Columns:
+  * Wallet/SOL Balance
+  * ID PnL & USD metrics
+  * 7D Performance indicators:
+    - PnL percentage
+    - 30D PnL
+    - Win Rate
+    - Transaction count (Tx)
+    - Token Distribution
+  * 7D Profit visualization
+  * 7D Avg Cost
+  * Last Time active
+  * Copy button
+
+- Performance Metrics Display:
+  * Success rate categories (>500%, 0-500%, <50%, >50%)
+  * Transaction counts with ratios
+  * Profit/Loss percentages
+  * Dollar value changes
+  * Portfolio distribution
+  * Mini chart visualizations
+
+- Additional Features:
+  * Wallet verification badges
+  * Performance indicators
+  * Time-based metrics (1h ago, 3d ago, etc.)
+  * One-click copy functionality
+  * Portfolio percentage allocation
+
+Technical Requirements:
+- Wallet tracking system
+- Real-time transaction monitoring
+- Performance calculation engine
+- Copy trading mechanism
+- Portfolio management system
+- Alert system for instant notifications
+
+8. Holdings Dashboard
+- Top Navigation:
+  * Wallet connection status
+  * Filter options:
+    - Hide Low Liq/Honeypot
+    - Hide Small Asset
+    - Hide Sell Out
+  * Connect wallet button
+
+- Pre-Connection State:
+  * "You haven't connected your wallet yet" message
+  * Prominent "Connect wallet" button
+  * Clean, minimal interface
+
+- Post-Connection Features (to be implemented):
+  * Portfolio overview
+  * Token holdings list
+  * Performance metrics
+  * Transaction history
+  * Asset distribution
+
+Technical Requirements:
+- Wallet integration:
+  * Multiple wallet support (Phantom, Solflare, etc.)
+  * Secure connection handling
+  * Balance tracking
+  * Transaction history
+- Filter system:
+  * Liquidity filters
+  * Asset size filters
+  * Transaction status filters
+- Security features:
+  * Secure wallet connection
+  * Data encryption
+  * Privacy controls
+- Real-time updates:
+  * Portfolio value
+  * Token prices
+  * Transaction status
+
+  9. Wallet Connection Modal
+- Modal Overlay:
+  * Dark semi-transparent background
+  * Centered position
+  * Close button (×) in top-right corner
+
+- Content Structure:
+  * Heading: "Discover Faster, Trading In Seconds �"
+  * Subheading: "Fast on-chain, click to trade; Auto sell with stop loss/take profit."
+  * Primary Button: "Connect Telegram" (green color with Telegram icon)
+  * Secondary Link: "Or Sign In With Wallet →" (text link below button)
+
+- Visual Elements:
+  * Rocket emoji in heading
+  * Telegram icon in button
+  * Arrow icon in wallet link
+  * Clean typography
+  * Consistent spacing
+
+10. Follow Dashboard
+- Top Navigation:
+  * Watchlist, Follow, Activity tabs
+  * Time interval filters (1m, 5m, 1h, 6h, 24h)
+  * Search functionality for token/contract/wallet
+
+- Pre-Connection State:
+  * Message: "You haven't connected your wallet yet"
+  * Prominent "Connect wallet" button
+
+- Referral Banner:
+  * Title: "Refer to Earn"
+  * Incentive: "$5000 Rebates"
+  * Countdown timer for the offer (e.g., "End in: 29d 23h 59m 23s")
+  * "Refer" button for participation
+
+Technical Requirements:
+- Wallet integration:
+  * Multiple wallet support (Phantom, Solflare, etc.)
+  * Secure connection handling
+  * Balance tracking
+- Referral system:
+  * Unique referral links
+  * Tracking of referrals and rewards
+  * Countdown timer for promotions
+- UI/UX considerations:
+  * Clean and minimal interface
+  * Responsive design for mobile and desktop
+
+
+  11. Search Functionality
+- Search Bar:
+  * Located at the top of the Follow section
+  * Placeholder text: "Search token/contract/wallet"
+
+- Trending Tokens Display:
+  * List of trending tokens based on the search query
+  * Each entry includes:
+    * Token name (with icon)
+    * Contract address
+    * Current price
+    * Percentage change (24h)
+
+- User Interaction:
+  * Users can type in the search bar to filter tokens
+  * Clicking on a token entry may redirect to its detailed view or trading page
+
+Technical Requirements:
+- Real-time search functionality:
+  * Debounced input to minimize API calls
+  * Fetch results from a token database or API
+- UI/UX considerations:
+  * Responsive design for mobile and desktop
+  * Clear visual hierarchy for token information
+  * Loading indicators for search results
+
+  14. Trending Tokens Dashboard (after selecting Tron)
+- Displayed Information:
+  * List of trending tokens on the Tron network
+  * Each entry includes:
+    - Token name (with icon)
+    - Age of the token
+    - Liquidity/Market Cap (Liq/MC)
+    - BlueChip score
+    - Holders count
+    - Smart Money/KOL indicators
+    - 1h Transaction count (1h TXs)
+    - 1h Volume (1h Vol)
+    - Current price
+    - Percentage changes (1m%, 5m%, 1h%)
+    - Honeypot status and verification status
+
+- User Interaction:
+  * Users can click on any token to view more details or trade
+  * "Buy" button for purchasing options
+
+- Referral Banner:
+  * Title: "Refer to Earn"
+  * Incentive: "$5000 Rebates"
+  * Countdown timer for the offer (e.g., "End in: 29d 23h 52m 20s")
+  * "Refer" button for participation
+
+Technical Requirements:
+- Real-time data fetching:
+  * Update token list based on the selected network
+  * Fetch data from the appropriate blockchain API
+- UI/UX Considerations:
+  * Responsive design for mobile and desktop
+  * Clear visual hierarchy for token information
+  * Loading indicators for data fetching
+
+15. Settings Dropdown Menu
+- Dropdown Options:
+  * Alert Settings: Allows users to configure notifications for specific events or price changes.
+  * Language Selection: Users can choose their preferred language (default shown: English).
+  * Dark Mode Toggle: Users can switch between light and dark themes for the interface.
+
+- User Interaction:
+  * Each option is clickable and may lead to further configuration screens or immediate changes in the UI.
+  * The dropdown should close when an option is selected or when the user clicks outside of it.
+
+Technical Requirements:
+- Alert Settings:
+  * Integration with notification services (e.g., email, push notifications).
+  * User interface for setting thresholds and preferences.
+
+- Language Support:
+  * Multi-language support for the application.
+  * Language files for easy translation management.
+
+- Dark Mode:
+  * CSS variables or classes to switch themes dynamically.
+  * User preference storage (e.g., local storage) to remember settings across sessions.
+
+- UI/UX Considerations:
+  * Clear visual indication of the currently selected settings.
+  * Responsive design for dropdown functionality.
+  * Consistent styling with the overall application theme.
+
+  9. Wallet Connection Modal
+- Modal Overlay:
+  * Dark semi-transparent background
+  * Centered position
+  * Close button (×) in top-right corner
+
+- Content Structure:
+  * Heading: "Discover Faster, Trading In Seconds 🚀"
+  * Subheading: "Fast on-chain, click to trade; Auto sell with stop loss/take profit."
+  * Primary Button: "Connect Telegram" (green color with Telegram icon)
+  * Secondary Link: "Or Sign In With Wallet →" (text link below button)
+
+- Visual Elements:
+  * Rocket emoji in heading
+  * Telegram icon in button
+  * Arrow icon in wallet link
+  * Clean typography
+  * Consistent spacing
+
+
+16. Time Interval Filter (1m)
+- Filter Functionality:
+  * Users can select different time intervals to view token performance:
+    - 1m (current view)
+    - 5m
+    - 1h
+    - 6h
+    - 24h
+
+- Displayed Information:
+  * List of trending tokens filtered by the selected time interval
+  * Each entry includes:
+    - Token name (with icon)
+    - Age of the token
+    - Liquidity/Market Cap (Liq/MC)
+    - BlueChip score
+    - Holders count
+    - Smart Money/KOL indicators
+    - 1m Transaction count (1m TXs)
+    - 1m Volume (1m Vol)
+    - Current price
+    - Percentage changes (1m%, 5m%, 1h%)
+    - Honeypot status and verification status
+
+- User Interaction:
+  * Users can click on any token to view more details or trade
+  * "Buy" button for purchasing options
+
+- Referral Banner:
+  * Title: "Refer to Earn"
+  * Incentive: "$5000 Rebates"
+  * Countdown timer for the offer (e.g., "End in: 29d 23h 26m 46s")
+  * "Refer" button for participation
+
+Technical Requirements:
+- Real-time data fetching:
+  * Update token list based on the selected time interval
+  * Fetch data from the appropriate blockchain API
+- UI/UX Considerations:
+  * Responsive design for mobile and desktop
+  * Clear visual hierarchy for token information
+  * Loading indicators for data fetching
+
+17. Time Interval Filter (5m)
+- Filter Functionality:
+  * Users can select different time intervals to view token performance:
+    - 1m
+    - 5m (current view)
+    - 1h
+    - 6h
+    - 24h
+
+- Displayed Information:
+  * List of trending tokens filtered by the selected time interval
+  * Each entry includes:
+    - Token name (with icon)
+    - Age of the token
+    - Liquidity/Market Cap (Liq/MC)
+    - BlueChip score
+    - Holders count
+    - Smart Money/KOL indicators
+    - 5m Transaction count (5m TXs)
+    - 5m Volume (5m Vol)
+    - Current price
+    - Percentage changes (1m%, 5m%, 1h%)
+    - Honeypot status and verification status
+
+- User Interaction:
+  * Users can click on any token to view more details or trade
+  * "Buy" button for purchasing options
+
+- Referral Banner:
+  * Title: "Refer to Earn"
+  * Incentive: "$5000 Rebates"
+  * Countdown timer for the offer (e.g., "End in: 29d 23h 25m 24s")
+  * "Refer" button for participation
+
+Technical Requirements:
+- Real-time data fetching:
+  * Update token list based on the selected time interval
+  * Fetch data from the appropriate blockchain API
+- UI/UX Considerations:
+  * Responsive design for mobile and desktop
+  * Clear visual hierarchy for token information
+  * Loading indicators for data fetching
+
+18. Time Interval Filter (1h)
+- Filter Functionality:
+  * Users can select different time intervals to view token performance:
+    - 1m
+    - 5m
+    - 1h (current view)
+    - 6h
+    - 24h
+
+- Displayed Information:
+  * List of trending tokens filtered by the selected time interval
+  * Each entry includes:
+    - Token name (with icon)
+    - Age of the token
+    - Liquidity/Market Cap (Liq/MC)
+    - BlueChip score
+    - Holders count
+    - Smart Money/KOL indicators
+    - 1h Transaction count (1h TXs)
+    - 1h Volume (1h Vol)
+    - Current price
+    - Percentage changes (1m%, 5m%, 1h%)
+    - Honeypot status and verification status
+
+- User Interaction:
+  * Users can click on any token to view more details or trade
+  * "Buy" button for purchasing options
+
+- Referral Banner:
+  * Title: "Refer to Earn"
+  * Incentive: "$5000 Rebates"
+  * Countdown timer for the offer (e.g., "End in: 29d 23h 25m 24s")
+  * "Refer" button for participation
+
+Technical Requirements:
+- Real-time data fetching:
+  * Update token list based on the selected time interval
+  * Fetch data from the appropriate blockchain API
+- UI/UX Considerations:
+  * Responsive design for mobile and desktop
+  * Clear visual hierarchy for token information
+  * Loading indicators for data fetching
+  
+19. Time Interval Filter (6h)
+- Filter Functionality:
+  * Users can select different time intervals to view token performance:
+    - 1m
+    - 5m
+    - 1h
+    - 6h (current view)
+    - 24h
+
+- Displayed Information:
+  * List of trending tokens filtered by the selected time interval
+  * Each entry includes:
+    - Token name (with icon)
+    - Age of the token
+    - Liquidity/Market Cap (Liq/MC)
+    - BlueChip score
+    - Holders count
+    - Smart Money/KOL indicators
+    - 6h Transaction count (6h TXs)
+    - 6h Volume (6h Vol)
+    - Current price
+    - Percentage changes (1m%, 5m%, 1h%)
+    - Honeypot status and verification status
+
+- User Interaction:
+  * Users can click on any token to view more details or trade
+  * "Buy" button for purchasing options
+
+- Referral Banner:
+  * Title: "Refer to Earn"
+  * Incentive: "$5000 Rebates"
+  * Countdown timer for the offer (e.g., "End in: 29d 23h 25m 24s")
+  * "Refer" button for participation
+
+Technical Requirements:
+- Real-time data fetching:
+  * Update token list based on the selected time interval
+  * Fetch data from the appropriate blockchain API
+- UI/UX Considerations:
+  * Responsive design for mobile and desktop
+  * Clear visual hierarchy for token information
+  * Loading indicators for data fetching
+
+20. Time Interval Filter (24h)
+- Filter Functionality:
+  * Users can select different time intervals to view token performance:
+    - 1m
+    - 5m
+    - 1h
+    - 6h
+    - 24h (current view)
+
+- Displayed Information:
+  * List of trending tokens filtered by the selected time interval
+  * Each entry includes:
+    - Token name (with icon)
+    - Age of the token
+    - Liquidity/Market Cap (Liq/MC)
+    - BlueChip score
+    - Holders count
+    - Smart Money/KOL indicators
+    - 24h Transaction count (24h TXs)
+    - 24h Volume (24h Vol)
+    - Current price
+    - Percentage changes (1m%, 5m%, 1h%)
+    - Honeypot status and verification status
+
+- User Interaction:
+  * Users can click on any token to view more details or trade
+  * "Buy" button for purchasing options
+
+- Referral Banner:
+  * Title: "Refer to Earn"
+  * Incentive: "$5000 Rebates"
+  * Countdown timer for the offer (e.g., "End in: 29d 23h 25m 24s")
+  * "Refer" button for participation
+
+Technical Requirements:
+- Real-time data fetching:
+  * Update token list based on the selected time interval
+  * Fetch data from the appropriate blockchain API
+- UI/UX Considerations:
+  * Responsive design for mobile and desktop
+  * Clear visual hierarchy for token information
+  * Loading indicators for data fetching
+
+21. Honeypot Filter Functionality
+- Filter Toggle:
+  * Users can enable or disable the Honeypot filter to view tokens based on their risk status.
+
+- Displayed Information:
+  * When the Honeypot filter is enabled:
+    - Only tokens that are verified as not being honeypots are displayed.
+    - Tokens with honeypot status are hidden from the list.
+
+- User Interaction:
+  * Users can toggle the filter on or off to adjust the displayed token list.
+  * The interface should provide clear feedback on the current filter status (enabled/disabled).
+
+- Visual Indicators:
+  * When enabled, the filter may show a visual cue (e.g., highlighted button or icon).
+  * When disabled, all tokens, including those marked as honeypots, are visible.
+
+- Technical Requirements:
+  * Real-time data fetching:
+    - Update the token list based on the filter status.
+    - Fetch data from the appropriate blockchain API to determine honeypot status.
+  * UI/UX Considerations:
+    - Responsive design for mobile and desktop.
+    - Clear visual hierarchy for token information.
+    - Loading indicators for data fetching.
+
+
+22. Linked Buy Functionality
+- Filter Functionality:
+  * Users can input a quantity (e.g., "2") to filter tokens that can be purchased in that amount.
+  * The "Linked Buy" option allows users to see only those tokens that meet the specified quantity criteria.
+
+- Displayed Information:
+  * List of trending tokens filtered by the Linked Buy quantity
+  * Each entry includes:
+    - Token name (with icon)
+    - Age of the token
+    - Liquidity/Market Cap (Liq/MC)
+    - BlueChip score
+    - Holders count
+    - Smart Money/KOL indicators
+    - 24h Transaction count (24h TXs)
+    - 24h Volume (24h Vol)
+    - Current price
+    - Percentage changes (1m%, 5m%, 1h%)
+    - Honeypot status and verification status
+    - "Buy 2" button for purchasing options
+
+- User Interaction:
+  * Users can click on any token to view more details or trade.
+  * The "Buy 2" button allows for immediate purchasing of the specified quantity.
+
+- Technical Requirements:
+  * Real-time data fetching:
+    - Update token list based on the Linked Buy quantity.
+    - Fetch data from the appropriate blockchain API.
+  * UI/UX Considerations:
+    - Responsive design for mobile and desktop.
+    - Clear visual hierarchy for token information.
+    - Loading indicators for data fetching.
+
+
+23. Quick Trend Settings Modal
+- Modal Overlay:
+  * Title: "Quick Trend Settings"
+  * Options for adjusting buy and sell settings.
+
+- Buy Settings:
+  * Slippage limit input field:
+    - Default value: "Auto 20.0%"
+    - Users can adjust the slippage percentage for transactions.
+
+- User Interaction:
+  * Users can input their desired slippage percentage.
+  * Options to confirm or cancel the changes.
+  * The modal should close upon confirmation or cancellation.
+
+- Technical Requirements:
+  * Real-time validation of input values.
+  * Update the application state based on user input.
+  * Ensure seamless integration with the trading functionality.
+
+- UI/UX Considerations:
+  * Clear visual hierarchy for settings options.
+  * Responsive design for mobile and desktop.
+  * Consistent styling with the overall application theme.
+
+
+24. Token Funnel Functionality
+- Hover Interaction:
+  * When users hover over the Token Funnel symbol, a tooltip or visual cue may appear, indicating its purpose (e.g., "Filter tokens with at least 1 social").
+
+- Click Interaction:
+  * Clicking the Token Funnel symbol opens a filter option to display only tokens that meet specific criteria.
+  * In this case, the filter is set to show tokens with at least one social media presence.
+
+- Displayed Information:
+  * The token list updates to reflect only those tokens that meet the selected criteria.
+  * Each entry includes:
+    - Token name (with icon)
+    - Age of the token
+    - Liquidity/Market Cap (Liq/MC)
+    - BlueChip score
+    - Holders count
+    - Smart Money/KOL indicators
+    - 24h Transaction count (24h TXs)
+    - 24h Volume (24h Vol)
+    - Current price
+    - Percentage changes (1m%, 5m%, 1h%)
+    - Honeypot status and verification status
+    - "Buy 2" button for purchasing options
+
+- User Interaction:
+  * Users can click on any token to view more details or trade.
+  * The filter can be toggled on or off to adjust the displayed token list.
+
+- Technical Requirements:
+  * Real-time data fetching:
+    - Update token list based on the filter status.
+    - Fetch data from the appropriate blockchain API to determine social media presence.
+  * UI/UX Considerations:
+    - Responsive design for mobile and desktop.
+    - Clear visual hierarchy for token information.
+    - Loading indicators for data fetching.
+
+25. Age Filter Functionality
+- Filter Options:
+  * Users can filter tokens based on their age using predefined ranges:
+    - Less than 10 minutes
+    - Less than 30 minutes
+    - Less than 1 hour
+    - Less than 3 hours
+    - Less than 6 hours
+    - Less than 12 hours
+    - Less than 24 hours
+
+- Displayed Information:
+  * The token list updates to reflect only those tokens that meet the selected age criteria.
+  * Each entry includes:
+    - Token name (with icon)
+    - Age of the token
+    - Liquidity/Market Cap (Liq/MC)
+    - BlueChip score
+    - Holders count
+    - Smart Money/KOL indicators
+    - 24h Transaction count (24h TXs)
+    - 24h Volume (24h Vol)
+    - Current price
+    - Percentage changes (1m%, 5m%, 1h%)
+    - Honeypot status and verification status
+    - "Buy 2" button for purchasing options
+
+- User Interaction:
+  * Users can select an age range to filter the displayed tokens.
+  * The "Reset" button allows users to clear the filter and view all tokens again.
+  * The "Apply" button confirms the selected filter criteria.
+
+- Technical Requirements:
+  * Real-time data fetching:
+    - Update token list based on the selected age filter.
+    - Fetch data from the appropriate blockchain API to determine token age.
+  * UI/UX Considerations:
+    - Responsive design for mobile and desktop.
+    - Clear visual hierarchy for token information.
+    - Loading indicators for data fetching.
+
+26. Liquidity and Market Cap Sorting and Filtering
+- Sorting Functionality:
+  * Users can sort the token list based on Liquidity (Liq) or Market Cap (MC) by clicking the respective headers.
+  * Sorting options may include:
+    - Ascending order
+    - Descending order
+
+- Displayed Information:
+  * The token list updates to reflect the selected sorting criteria.
+  * Each entry includes:
+    - Token name (with icon)
+    - Age of the token
+    - Liquidity/Market Cap (Liq/MC)
+    - BlueChip score
+    - Holders count
+    - Smart Money/KOL indicators
+    - 24h Transaction count (24h TXs)
+    - 24h Volume (24h Vol)
+    - Current price
+    - Percentage changes (1m%, 5m%, 1h%)
+    - Honeypot status and verification status
+    - "Buy 2" button for purchasing options
+
+- Filter Functionality:
+  * Clicking the funnel symbol next to the Liquidity/Market Cap headers opens a filter option.
+  * Users can set criteria to filter tokens based on their liquidity or market cap values.
+
+- User Interaction:
+  * Users can click on the Liquidity or Market Cap headers to sort the displayed tokens.
+  * The funnel symbol allows users to apply specific filters to narrow down the token list.
+
+- Technical Requirements:
+  * Real-time data fetching:
+    - Update token list based on the selected sorting or filtering criteria.
+    - Fetch data from the appropriate blockchain API to determine liquidity and market cap.
+  * UI/UX Considerations:
+    - Responsive design for mobile and desktop.
+    - Clear visual hierarchy for token information.
+    - Loading indicators for data fetching.
+
+27. BlueChip Sorting Functionality
+- Sorting Functionality:
+  * Users can sort the token list based on the BlueChip score by clicking the respective header.
+  * Sorting options may include:
+    - Ascending order
+    - Descending order
+
+- Displayed Information:
+  * The token list updates to reflect the selected sorting criteria based on the BlueChip score.
+  * Each entry includes:
+    - Token name (with icon)
+    - Age of the token
+    - Liquidity/Market Cap (Liq/MC)
+    - BlueChip score
+    - Holders count
+    - Smart Money/KOL indicators
+    - 24h Transaction count (24h TXs)
+    - 24h Volume (24h Vol)
+    - Current price
+    - Percentage changes (1m%, 5m%, 1h%)
+    - Honeypot status and verification status
+    - "Buy 2" button for purchasing options
+
+- User Interaction:
+  * Users can click on the BlueChip header to sort the displayed tokens.
+  * The sorting will help users identify tokens with higher BlueChip scores, indicating potential stability or reliability.
+
+- Technical Requirements:
+  * Real-time data fetching:
+    - Update token list based on the selected sorting criteria.
+    - Fetch data from the appropriate blockchain API to determine the BlueChip score.
+  * UI/UX Considerations:
+    - Responsive design for mobile and desktop.
+    - Clear visual hierarchy for token information.
+    - Loading indicators for data fetching.
+
+29. Smart Money/KOL Sorting Functionality
+- Sorting Functionality:
+  * Users can sort the token list based on the Smart Money/KOL indicator by clicking the respective header.
+  * Sorting options may include:
+    - Ascending order
+    - Descending order
+
+- Displayed Information:
+  * The token list updates to reflect the selected sorting criteria based on the Smart Money/KOL indicator.
+  * Each entry includes:
+    - Token name (with icon)
+    - Age of the token
+    - Liquidity/Market Cap (Liq/MC)
+    - BlueChip score
+    - Holders count
+    - Smart Money/KOL indicators
+    - 24h Transaction count (24h TXs)
+    - 24h Volume (24h Vol)
+    - Current price
+    - Percentage changes (1m%, 5m%, 1h%)
+    - Honeypot status and verification status
+    - "Buy 2" button for purchasing options
+
+- User Interaction:
+  * Users can click on the Smart Money/KOL header to sort the displayed tokens.
+  * The sorting will help users identify tokens that have been favored by smart money or key opinion leaders.
+
+- Technical Requirements:
+  * Real-time data fetching:
+    - Update token list based on the selected sorting criteria.
+    - Fetch data from the appropriate blockchain API to determine the Smart Money/KOL indicator.
+  * UI/UX Considerations:
+    - Responsive design for mobile and desktop.
+    - Clear visual hierarchy for token information.
+    - Loading indicators for data fetching.
+
+30. Price Sorting Functionality
+- Sorting Functionality:
+  * Users can sort the token list based on price by clicking the respective header.
+  * Sorting options may include:
+    - Ascending order
+    - Descending order
+
+- Displayed Information:
+  * The token list updates to reflect the selected sorting criteria based on price.
+  * Each entry includes:
+    - Token name (with icon)
+    - Age of the token
+    - Liquidity/Market Cap (Liq/MC)
+    - BlueChip score
+    - Holders count
+    - Smart Money/KOL indicators
+    - 24h Transaction count (24h TXs)
+    - 24h Volume (24h Vol)
+    - Current price
+    - Percentage changes (1m%, 5m%, 1h%)
+    - Honeypot status and verification status
+    - "Buy 2" button for purchasing options
+
+- User Interaction:
+  * Users can click on the price header to sort the displayed tokens.
+  * The sorting will help users identify tokens based on their price, which can be useful for making purchasing decisions.
+
+- Technical Requirements:
+  * Real-time data fetching:
+    - Update token list based on the selected sorting criteria.
+    - Fetch data from the appropriate blockchain API to determine the current price.
+  * UI/UX Considerations:
+    - Responsive design for mobile and desktop.
+    - Clear visual hierarchy for token information.
+    - Loading indicators for data fetching.
+
+31. Smart Money/KOL Sorting Functionality
+- Sorting Functionality:
+  * Users can sort the token list based on the Smart Money/KOL indicator by clicking the respective header.
+  * Sorting options may include:
+    - Ascending order
+    - Descending order
+
+- Displayed Information:
+  * The token list updates to reflect the selected sorting criteria based on the Smart Money/KOL indicator.
+  * Each entry includes:
+    - Token name (with icon)
+    - Age of the token
+    - Liquidity/Market Cap (Liq/MC)
+    - BlueChip score
+    - Holders count
+    - Smart Money/KOL indicators
+    - 24h Transaction count (24h TXs)
+    - 24h Volume (24h Vol)
+    - Current price
+    - Percentage changes (1m%, 5m%, 1h%)
+    - Honeypot status and verification status
+    - "Buy 2" button for purchasing options
+
+- User Interaction:
+  * Users can click on the Smart Money/KOL header to sort the displayed tokens.
+  * The sorting will help users identify tokens that have been favored by smart money or key opinion leaders.
+
+- Technical Requirements:
+  * Real-time data fetching:
+    - Update token list based on the selected sorting criteria.
+    - Fetch data from the appropriate blockchain API to determine the Smart Money/KOL indicator.
+  * UI/UX Considerations:
+    - Responsive design for mobile and desktop.
+    - Clear visual hierarchy for token information.
+    - Loading indicators for data fetching.
+
+32. Degen Audit Filter Functionality
+- Filter Options:
+  * Users can filter tokens based on their Degen Audit status using checkboxes for the following criteria:
+    - All
+    - Not Honeypot
+    - Verified
+    - Renounced
+    - Locked
+  * Users can also specify a range for "Insiders" using percentage fields.
+
+- Displayed Information:
+  * The token list updates to reflect only those tokens that meet the selected Degen Audit criteria.
+  * Each entry includes:
+    - Token name (with icon)
+    - Age of the token
+    - Liquidity/Market Cap (Liq/MC)
+    - BlueChip score
+    - Holders count
+    - Smart Money/KOL indicators
+    - 24h Transaction count (24h TXs)
+    - 24h Volume (24h Vol)
+    - Current price
+    - Percentage changes (1m%, 5m%, 1h%)
+    - Honeypot status and verification status
+    - "Buy 2" button for purchasing options
+
+- User Interaction:
+  * Users can select the desired Degen Audit criteria to filter the displayed tokens.
+  * The "Reset" button allows users to clear the filter and view all tokens again.
+  * The "Apply" button confirms the selected filter criteria.
+
+- Technical Requirements:
+  * Real-time data fetching:
+    - Update token list based on the selected Degen Audit filter.
+    - Fetch data from the appropriate blockchain API to determine Degen Audit status.
+  * UI/UX Considerations:
+    - Responsive design for mobile and desktop.
+    - Clear visual hierarchy for token information.
+    - Loading indicators for data fetching.
+
+33. 24h Volume Filter Functionality
+- Filter Options:
+  * Users can filter tokens based on their 24-hour trading volume using predefined ranges:
+    - Greater than $50K
+    - Greater than $100K
+    - Greater than $500K
+  * Users can also specify a range using "to" fields for custom filtering.
+
+- Displayed Information:
+  * The token list updates to reflect only those tokens that meet the selected 24-hour volume criteria.
+  * Each entry includes:
+    - Token name (with icon)
+    - Age of the token
+    - Liquidity/Market Cap (Liq/MC)
+    - BlueChip score
+    - Holders count
+    - Smart Money/KOL indicators
+    - 24h Transaction count (24h TXs)
+    - 24h Volume (24h Vol)
+    - Current price
+    - Percentage changes (1m%, 5m%, 1h%)
+    - Honeypot status and verification status
+    - "Buy 2" button for purchasing options
+
+- User Interaction:
+  * Users can select the desired 24-hour volume range to filter the displayed tokens.
+  * The "Reset" button allows users to clear the filter and view all tokens again.
+  * The "Apply" button confirms the selected filter criteria.
+
+- Technical Requirements:
+  * Real-time data fetching:
+    - Update token list based on the selected 24-hour volume filter.
+    - Fetch data from the appropriate blockchain API to determine the 24-hour trading volume.
+  * UI/UX Considerations:
+    - Responsive design for mobile and desktop.
+    - Clear visual hierarchy for token information.
+    - Loading indicators for data fetching.
+
+34. 24h Transaction Count Filter Functionality
+- Filter Options:
+  * Users can filter tokens based on their 24-hour transaction count using predefined ranges:
+    - Greater than 200 TXs
+    - Greater than 500 TXs
+    - Greater than 1,000 TXs
+  * Users can also specify a range using "to" fields for custom filtering.
+
+- Displayed Information:
+  * The token list updates to reflect only those tokens that meet the selected 24-hour transaction count criteria.
+  * Each entry includes:
+    - Token name (with icon)
+    - Age of the token
+    - Liquidity/Market Cap (Liq/MC)
+    - BlueChip score
+    - Holders count
+    - Smart Money/KOL indicators
+    - 24h Transaction count (24h TXs)
+    - 24h Volume (24h Vol)
+    - Current price
+    - Percentage changes (1m%, 5m%, 1h%)
+    - Honeypot status and verification status
+    - "Buy 2" button for purchasing options
+
+- User Interaction:
+  * Users can select the desired 24-hour transaction count range to filter the displayed tokens.
+  * The "Reset" button allows users to clear the filter and view all tokens again.
+  * The "Apply" button confirms the selected filter criteria.
+
+- Technical Requirements:
+  * Real-time data fetching:
+    - Update token list based on the selected 24-hour transaction count filter.
+    - Fetch data from the appropriate blockchain API to determine the 24-hour transaction count.
+  * UI/UX Considerations:
+    - Responsive design for mobile and desktop.
+    - Clear visual hierarchy for token information.
+    - Loading indicators for data fetching.
+
+35. 5-Minute Percentage Change Sorting Functionality
+- Sorting Functionality:
+  * Users can sort the token list based on the 5-minute percentage change by clicking the respective header.
+  * Sorting options may include:
+    - Ascending order
+    - Descending order
+
+- Displayed Information:
+  * The token list updates to reflect the selected sorting criteria based on the 5-minute percentage change.
+  * Each entry includes:
+    - Token name (with icon)
+    - Age of the token
+    - Liquidity/Market Cap (Liq/MC)
+    - BlueChip score
+    - Holders count
+    - Smart Money/KOL indicators
+    - 24h Transaction count (24h TXs)
+    - 24h Volume (24h Vol)
+    - Current price
+    - Percentage changes (1m%, 5m%, 1h%)
+    - Honeypot status and verification status
+    - "Buy 2" button for purchasing options
+
+- User Interaction:
+  * Users can click on the 5m% header to sort the displayed tokens.
+  * The sorting will help users identify tokens that have experienced significant changes in value over the last 5 minutes.
+
+- Technical Requirements:
+  * Real-time data fetching:
+    - Update token list based on the selected sorting criteria.
+    - Fetch data from the appropriate blockchain API to determine the 5-minute percentage change.
+  * UI/UX Considerations:
+    - Responsive design for mobile and desktop.
+    - Clear visual hierarchy for token information.
+    - Loading indicators for data fetching.
+
+36. 1-Minute Percentage Change Sorting Functionality
+- Sorting Functionality:
+  * Users can sort the token list based on the 1-minute percentage change by clicking the respective header.
+  * Sorting options may include:
+    - Ascending order
+    - Descending order
+
+- Displayed Information:
+  * The token list updates to reflect the selected sorting criteria based on the 1-minute percentage change.
+  * Each entry includes:
+    - Token name (with icon)
+    - Age of the token
+    - Liquidity/Market Cap (Liq/MC)
+    - BlueChip score
+    - Holders count
+    - Smart Money/KOL indicators
+    - 24h Transaction count (24h TXs)
+    - 24h Volume (24h Vol)
+    - Current price
+    - Percentage changes (1m%, 5m%, 1h%)
+    - Honeypot status and verification status
+    - "Buy 2" button for purchasing options
+
+- User Interaction:
+  * Users can click on the 1m% header to sort the displayed tokens.
+  * The sorting will help users identify tokens that have experienced significant changes in value over the last minute.
+
+- Technical Requirements:
+  * Real-time data fetching:
+    - Update token list based on the selected sorting criteria.
+    - Fetch data from the appropriate blockchain API to determine the 1-minute percentage change.
+  * UI/UX Considerations:
+    - Responsive design for mobile and desktop.
+    - Clear visual hierarchy for token information.
+    - Loading indicators for data fetching.
+
+37. 1-Hour Percentage Change Sorting Functionality
+- Sorting Functionality:
+  * Users can sort the token list based on the 1-hour percentage change by clicking the respective header.
+  * Sorting options may include:
+    - Ascending order
+    - Descending order
+
+- Displayed Information:
+  * The token list updates to reflect the selected sorting criteria based on the 1-hour percentage change.
+  * Each entry includes:
+    - Token name (with icon)
+    - Age of the token
+    - Liquidity/Market Cap (Liq/MC)
+    - BlueChip score
+    - Holders count
+    - Smart Money/KOL indicators
+    - 24h Transaction count (24h TXs)
+    - 24h Volume (24h Vol)
+    - Current price
+    - Percentage changes (1m%, 5m%, 1h%)
+    - Honeypot status and verification status
+    - "Buy 2" button for purchasing options
+
+- User Interaction:
+  * Users can click on the 1h% header to sort the displayed tokens.
+  * The sorting will help users identify tokens that have experienced significant changes in value over the last hour.
+
+- Technical Requirements:
+  * Real-time data fetching:
+    - Update token list based on the selected sorting criteria.
+    - Fetch data from the appropriate blockchain API to determine the 1-hour percentage change.
+  * UI/UX Considerations:
+    - Responsive design for mobile and desktop.
+    - Clear visual hierarchy for token information.
+    - Loading indicators for data fetching.
+
+39. GMGN AI Tutorial Overview
+- Purpose:
+  * The GMGN AI Tutorial page serves as a comprehensive guide for users to understand how to utilize the GMGN platform effectively, particularly for meme trading.
+
+- Key Sections:
+  * **Quick Start:** A section that provides essential tips for new users to get started with the platform.
+  * **Featured Icons and Definitions:** An explanation of various icons and features available on the platform.
+  * **Trading Systems:** Information on the trading systems available, including transaction and limit order functionalities.
+  * **Telegram Bot List:** Details about the various Telegram bots associated with GMGN for alerts and trading signals.
+  * **Referral Program:** Information on how users can earn rebates by inviting friends to the platform.
+
+- User Interaction:
+  * Users can navigate through different sections to learn about specific features, trading strategies, and how to maximize their use of the GMGN platform.
+  * The tutorial aims to enhance user experience by providing clear instructions and resources.
+
+- Technical Requirements:
+  * Ensure that the tutorial is easily accessible from the main platform.
+  * Implement a responsive design for mobile and desktop users.
+  * Include links to relevant resources and tools for further learning.
+
+
+40. Referral Program Overview
+- Purpose:
+  * The referral program allows users to invite friends and earn commissions based on their activity on the platform.
+
+- Key Features:
+  * **Earnings Potential:** Users can earn up to $2,000 in rebates per month by referring others to the platform.
+  * **Visual Representation:** A graph illustrates the potential earnings based on the trading volume generated by referred users.
+  * **Volume Milestones:** The graph indicates specific trading volume milestones (e.g., $50k, $250k, $500k, $1,000k) that correlate with potential earnings.
+
+- User Interaction:
+  * Users can share their referral link with friends to start earning commissions.
+  * The program encourages users to engage with the platform and increase trading volume.
+
+- Technical Requirements:
+  * Implement a referral link generation feature for users.
+  * Track referrals and calculate commissions based on user activity.
+  * Ensure that the referral program is easily accessible from the main platform.
+
+
+41. About GMGN Overview
+- Purpose:
+  * The "About" section introduces users to the GMGN platform, highlighting its key features and benefits.
+
+- Key Messages:
+  * **Fast Trading:** The platform emphasizes its capability for fast trading, allowing users to execute trades in seconds.
+  * **On-Chain Speed:** It promotes the idea of on-chain trading at the speed of light, appealing to users looking for efficiency in their trading activities.
+
+- User Interaction:
+  * Users can learn about the platform's advantages and how it differentiates itself from other trading platforms.
+  * The section may include a call-to-action, encouraging users to start trading or explore further.
+
+- Technical Requirements:
+  * Ensure that the "About" section is easily accessible from the main navigation.
+  * Implement a responsive design for mobile and desktop users.
+  * Include links to relevant resources or sections for users to explore more about the platform.
+
+42. GMGN API Documentation Overview
+- Purpose:
+  * The API documentation provides developers with the necessary information to integrate GMGN's trading functionalities into their applications.
+
+- Key Sections:
+  * **Cooperation-API:** 
+    - Integrate GMGN's ETH/Base trading API for fast quantitative trading.
+    - Detailed steps for executing ETH/Base chain swap transactions.
+  * **Transaction Steps:**
+    1. **Get Transaction Route:** 
+       - Retrieve the available routing for ETH/Base transactions.
+    2. **Get Recommended Slippage:** 
+       - Obtain the recommended slippage value for ETH/Base tokens.
+    3. **Get Recommended Gas Price:** 
+       - Fetch the recommended gas price for ETH/Base chain.
+    4. **Simulated Transaction:** 
+       - Call the simulated transaction after selecting the route.
+       - Link to the swap transaction simulation for ETH/Base.
+    5. **Submit Transaction Signature:** 
+       - Instructions on submitting the transaction signature using ethers.js library.
+
+- User Interaction:
+  * Developers can follow the steps outlined to integrate the API into their applications.
+  * Links to additional resources and tutorials are provided for further assistance.
+
+- Technical Requirements:
+  * Ensure that the API documentation is clear and easy to navigate.
+  * Implement responsive design for mobile and desktop users.
+  * Include code examples and links to relevant libraries for integration.
+
+43. GMGN Bot Portal Overview
+- Purpose:
+  * The Bot portal serves as a hub for users to access various trading bots and signal alert channels associated with the GMGN platform.
+
+- Key Features:
+  * **Signal Alert Channels:** 
+    - Users are informed about the transition to private channels to avoid scams commonly found in public channels.
+  * **Available Bots:**
+    - **GMGN Login Bot:** For user authentication and account management.
+    - **ETH Swap Bot:** Facilitates trading on the Ethereum network.
+    - **Solana Swap Bot:** Facilitates trading on the Solana network.
+    - **Tron Swap Bot:** Facilitates trading on the Tron network.
+  * **Action Buttons:**
+    - **Join Group:** Allows users to join the respective bot or channel.
+    - **Setup Bots Guide:** Provides instructions on how to set up and use the bots effectively.
+
+- User Interaction:
+  * Users can easily join the relevant groups and access the bots to enhance their trading experience.
+  * The setup guide helps users understand how to utilize the bots for trading.
+
+- Technical Requirements:
+  * Ensure that the bot links are functional and lead to the correct channels.
+  * Implement a responsive design for mobile and desktop users.
+  * Include clear instructions for setting up and using the bots.
+
+44. Additional Navigation Elements
+- Navigation Bar:
+  * The navigation bar includes the following elements:
+    - **Academy:** Links to educational resources and tutorials.
+    - **About:** Provides information about the GMGN platform.
+    - **API:** Access to API documentation for developers.
+    - **Bot:** Portal for GMGN signal alert channels and trading bots.
+    - **X Logo:** A link to an external platform (e.g., Twitter or another social media).
+    - **Telegram Logo:** A link to the GMGN Telegram group for community engagement and updates.
+
+- TRX Price Display:
+  * The current price of TRX is displayed prominently as **TRX: $0.283**.
+  * This value updates in real-time, providing users with the latest market information.
+
+- User Interaction:
+  * Users can click on the logos to access the respective platforms for more information or community interaction.
+  * The TRX price display allows users to stay informed about the current market conditions.
+
+- Technical Requirements:
+  * Ensure that all links are functional and lead to the correct external platforms.
+  * Implement real-time updates for the TRX price display.
+  * Maintain a responsive design for mobile and desktop users.
+
+  44. Token Detail View Overview
+- Purpose:
+  * The token detail view provides comprehensive information about a specific token, allowing users to analyze its performance and execute trades.
+
+- Displayed Information:
+  * **Token Name and Symbol:** Displays the name (SUNGOD) and symbol (SUNGOD).
+  * **Current Price:** Shows the current trading price ($0.010163) and market cap ($10.1K).
+  * **Price Change:** Indicates the percentage change over the last 24 hours (-22.26%).
+  * **Trading Volume:** Displays the trading volume for the token.
+  * **Chart:** A price chart visualizes the token's performance over different time frames (1s, 1m, 5m, 1h, 1d, etc.).
+  * **Buy/Sell Options:** 
+    - **One Click Trading:** Users can quickly buy or sell using predefined amounts (100, 500, 1000, 5000).
+    - **Slippage Settings:** Users can adjust slippage settings (default is 1.5%).
+  * **Order Entry:** Users can enter the amount of TRX they wish to buy or sell.
+
+- User Interaction:
+  * Users can execute trades directly from this view, making it easy to act on market movements.
+  * The chart allows users to analyze price trends and make informed trading decisions.
+
+- Technical Requirements:
+  * Ensure real-time updates for price and volume data.
+  * Implement responsive design for mobile and desktop users.
+  * Provide clear instructions for using the trading features.
+
+45. Wallet Detail View Overview
+- Purpose:
+  * The wallet detail view provides insights into the trading performance and activity of a specific wallet.
+
+- Displayed Information:
+  * **Wallet Address:** Shows the unique identifier for the wallet (e.g., TWRZB...QAf).
+  * **Last 7 Days PnL:** Displays the profit and loss for the last week, indicating a significant gain of +995.84% (+$7,883.98 USD).
+  * **Win Rate:** Shows the win rate for trades executed by the wallet (currently not available).
+  * **PnL Breakdown:**
+    - **Total PnL:** Overall profit and loss for the wallet.
+    - **Unrealized Profits:** Profits that have not yet been realized through selling.
+    - **7D Total Cost:** Total cost of trades over the last 7 days.
+    - **7D Token Average Cost:** Average cost of tokens traded in the last week.
+    - **7D Token Average Realized Profits:** Average profits realized from trades in the last week.
+    - **TRX Balance:** Current balance in TRX (78.6K TRX, approximately $22.6K).
+
+- Activity Section:
+  * Lists recent trading activity, including:
+    - **Type:** Indicates whether the transaction was a buy or sell.
+    - **Token:** The specific token involved in the transaction (e.g., NotAI).
+    - **Total:** Total value of the transaction.
+    - **USD Value:** Equivalent value in USD.
+    - **Amount:** Quantity of tokens traded.
+    - **Price:** Price per token at the time of the transaction.
+    - **Profit:** Profit or loss from the transaction.
+    - **Age:** Time since the transaction occurred.
+
+- User Interaction:
+  * Users can analyze the trading performance of the wallet and view detailed transaction history.
+  * Options to share transaction details are available.
+
+- Technical Requirements:
+  * Ensure real-time updates for wallet performance and transaction data.
+  * Implement responsive design for mobile and desktop users.
+  * Provide clear instructions for interpreting the data displayed.

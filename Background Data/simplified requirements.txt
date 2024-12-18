@@ -1,0 +1,42 @@
+Simplified GMGN Clone - Portfolio Version
+Core Features to Implement
+Essential Components
+Navigation bar with key sections (Trending, New Pairs, Holdings)
+Network selector (SOL)
+Basic wallet connection
+Search functionality for tokens
+Main Dashboard
+Token listing table with essential columns:
+Token name and icon
+Price and price changes
+Market cap
+Age
+Basic volume metrics
+Simple sorting functionality
+Basic filtering options
+Token Details
+Basic price chart
+Buy/Sell interface
+Token information display
+Wallet Integration
+Connect wallet functionality
+Display basic wallet information
+Show holdings
+
+
+Features to Skip (Too Complex for Portfolio)
+Advanced Features
+Copy trading system
+Smart money tracking
+Complex analytics
+Bot integration
+Referral system
+Multiple network support
+Complex Data Processing
+Real-time price calculations
+Complex market analytics
+Historical data analysis
+Additional Tools
+Sniper tools
+Auto-trading features
+Complex notification systems
