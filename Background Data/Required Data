@@ -1,0 +1,104 @@
+Based on the available information, here's a breakdown of the data required for the frontend display:
+
+# Core Data Requirements
+
+1. **Token Data**
+- Token name and symbol
+- Token icon/logo
+- Contract address
+- Age (time since creation)
+- Current price in USD
+- Market cap
+- Liquidity
+- BlueChip score
+- Percentage changes (1m%, 5m%, 1h%, 24h%)
+- Trading volume (1h, 24h)
+- Transaction count (1h, 24h)
+- Holder analytics (count and ratio)
+- Verification status
+- Honeypot status
+- Social/website links
+- Degen Audit status
+
+2. **Price & Trading Data**
+- Real-time price updates
+- Historical price data for charts
+- Time interval data (1m, 5m, 1h, 6h, 24h)
+- Trading volume
+- Liquidity pool information
+- Buy/Sell transaction history
+- Slippage recommendations
+- Gas price data
+
+3. **Wallet Data**
+- Wallet address
+- Balance in native token (SOL)
+- Token holdings
+- Transaction history
+- Performance metrics:
+  * PnL (Profit and Loss)
+  * Win rate
+  * Total cost
+  * Average cost
+  * Realized profits
+  * Transaction counts
+
+4. **Smart Money/KOL Indicators**
+- Smart money wallet activities
+- Key Opinion Leader (KOL) movements
+- Insider trading percentages
+- Top wallet movements
+
+5. **Market Analysis Data**
+- Market trends
+- Token rankings
+- Pump indicators
+- Moonshot potential metrics
+- Completion percentages
+- Performance indicators
+
+6. **Security & Verification Data**
+- Contract verification status
+- Liquidity lock status
+- Renounced ownership status
+- Mint function status
+- Blacklist information
+- Audit results
+
+7. **Network Data**
+- Network status (SOL)
+- Real-time network price
+- Gas fees
+- Network congestion status
+
+8. **User-Specific Data**
+- Watchlist tokens
+- Portfolio holdings
+- Referral statistics
+- Trading history
+- Alert settings
+- UI preferences (language, theme)
+
+9. **Social & Community Data**
+- Telegram group links
+- Social media presence
+- Community size metrics
+- Developer team information
+
+10. **Trading Bot Data**
+- Bot performance metrics
+- Signal alerts
+- Trading pair information
+- Success rates
+- Trading volumes
+
+This data will need to be:
+- Updated in real-time where applicable
+- Cached appropriately to minimize API calls
+- Formatted for different display contexts
+- Filtered based on user preferences
+- Secured when dealing with sensitive information
+- Validated before display
+- Properly error-handled
+
+The frontend will need to implement appropriate loading states, error states, and empty states for all this data.
