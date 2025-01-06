@@ -1,7 +1,6 @@
-Key API Endpoints We Can Use
+# Key API Endpoints We Can Use
 
-1. Token Basic Data:
-
+## 1. Token Basic Data:
 // Using /coins/{id} endpoint
 interface TokenBasicData {
   id: string;
@@ -15,10 +14,9 @@ interface TokenBasicData {
   price_change_percentage_1h: number;
 }
 
-Source: https://docs.coingecko.com/reference/coins-id
+**Source: https://docs.coingecko.com/reference/coins-id**
 
-2. Market Data:
-
+## 2. Market Data:
 // Using /coins/markets endpoint
 interface MarketData {
     total_liquidity: number;
@@ -31,10 +29,9 @@ interface MarketData {
     atl_date: string;
   }
 
-  Source: https://docs.coingecko.com/reference/coins-markets
+**Source: https://docs.coingecko.com/reference/coins-markets**
 
-3. Historical Data:
-
+## 3. Historical Data:
 // Using /coins/{id}/market_chart/range endpoint
 interface HistoricalData {
     prices: [timestamp: number, price: number][];
@@ -42,41 +39,43 @@ interface HistoricalData {
     total_volumes: [timestamp: number, volume: number][];
   }
 
-Source: 
+**Source:**
 
+1. https://docs.coingecko.com/reference/coins-id-history
+2. https://docs.coingecko.com/reference/coins-id-market-chart
+3. https://docs.coingecko.com/reference/coins-id-market-chart-range```
 
-https://docs.coingecko.com/reference/coins-id-history
-https://docs.coingecko.com/reference/coins-id-market-chart
-https://docs.coingecko.com/reference/coins-id-market-chart-range
+## Additional Data Sources Needed
 
-Additional Data Sources Needed
+**1. Solana-Specific Data**
 
-1. Solana-Specific Data
+1. Smart contract verification status
+2. Token holder analytics
+3. Liquidity pool details
+4. BlueChip scoring
 
-Smart contract verification status
-Token holder analytics
-Liquidity pool details
-BlueChip scoring
-
-Source:
+**Source:**
 
 For developers looking to access Solana-specific data and metrics for free, there are several options available through public RPC nodes and services. Here’s a summary of the resources you can utilize:
-Free RPC Providers for Solana
-Solana Public RPC Endpoints:
+
+1. Free RPC Providers for Solana
+2. Solana Public RPC Endpoints:
 You can access the public endpoints provided by Solana, which allow for free RPC requests. These endpoints are suitable for low-volume testing and development.
 Example endpoint: https://api.mainnet-beta.solana.com
 Notable Free RPC Providers:
-Helius: Offers a user-friendly interface with a free tier that allows developers to get started easily.
-QuickNode: Provides a free plan with up to 10 million credits per month, suitable for basic usage.
-GenesysGo: Access is free due to their validator node profits, but there are request limits based on the type of operation.
-Allnodes: Offers free Solana RPC endpoints including WebSocket and GRPC options.
-Community Resources:
+1. Helius: Offers a user-friendly interface with a free tier that allows developers to get started easily.
+2. QuickNode: Provides a free plan with up to 10 million credits per month, suitable for basic usage.
+3. GenesysGo: Access is free due to their validator node profits, but there are request limits based on the type of operation.
+4. Allnodes: Offers free Solana RPC endpoints including WebSocket and GRPC options.
+5. Community Resources:
 A list of over 80 public RPC endpoints compiled by Everstake and extrnode is available on GitHub, which can help developers find reliable nodes.
-Considerations When Using Free Services
-Rate Limits: Free services typically come with rate limits and can be less reliable during high traffic periods.
-Performance: While suitable for development and testing, these public endpoints may not provide the performance needed for production applications.
-No SLA: Free services often lack Service Level Agreements (SLAs), meaning there is no guarantee of uptime or response times.
-Custom Indexers
+Considerations When Using Free Services 
+Rate Limits
+Performance:
+No SLA:
+
+**Custom Indexers**
+
 For more specific metrics related to smart contracts, token holders, liquidity pools, and BlueChip scoring, you may need to implement custom indexers. These can be built on top of the data retrieved from the RPC nodes or through dedicated analytics platforms that support Solana.
 By leveraging these free resources effectively, you can develop and test your applications on the Solana blockchain without incurring costs. However, as your application scales or requires more reliability, consider transitioning to paid services that offer better performance and support.
 
@@ -92,7 +91,7 @@ You can access the requested data on the Solana blockchain for free, but the ava
 
 ## 3. Liquidity Pool Details
 - **Accessing Data**: Information about liquidity pools can be obtained from decentralized exchanges (DEXs) operating on Solana, such as Raydium or Serum. You can query their smart contracts via public RPC nodes to get details about liquidity pools.
-- **Free APIs**: Some DEXs offer free APIs that allow developers to retrieve liquidity pool data directly.
+- **Free APIs**: Some DEXs offer free APIs that allow developers to retrieve liquidity pool data directly. FOr example, uniswap, sushiswap, raydium, orca, etc.balancer, pancakeswap, curve finance
 
 ## 4. BlueChip Scoring
 - **Custom Logic Required**: BlueChip scoring typically involves evaluating various metrics such as market cap, trading volume, and community trust. While there might not be a direct API providing this score for free, you can implement your own scoring system using data retrieved from public RPC endpoints and analytics platforms.
@@ -101,14 +100,14 @@ You can access the requested data on the Solana blockchain for free, but the ava
 ## Conclusion
 In summary, while you can access smart contract verification status, token holder analytics, liquidity pool details, and potentially develop a BlueChip scoring system for free on the Solana blockchain, it will require utilizing public RPC endpoints and possibly some custom development work. The availability of specific metrics may depend on community tools and APIs that are accessible without cost.
 
-Citations:
-[1] https://www.quicknode.com/guides/ethereum-development/smart-contracts/different-ways-to-verify-smart-contract-code
-[2] https://solana.stackexchange.com/questions/9330/how-to-verify-solana-program-spl-token-on-solana
-[3] https://solana.com/developers/guides/advanced/verified-builds
+**Citations:**
+1. https://www.quicknode.com/guides/ethereum-development/smart-contracts/different-ways-to-verify-smart-contract-code
+2. https://solana.stackexchange.com/questions/9330/how-to-verify-solana-program-spl-token-on-solana
+3. https://solana.com/developers/guides/advanced/verified-builds
 
 
 
-2. Custom Metrics:
+## 2. Custom Metrics:
 
 
 
@@ -139,10 +138,10 @@ You can retrieve the data defined in your `CustomMetrics` interface for free usi
 
 While some of the specific metrics may not have dedicated free APIs, you can piece together the required data using a combination of public RPC endpoints, community tools, and custom scripts. This approach will require some development effort but allows you to access the necessary information without incurring costs.
 
-Citations:
-[1] https://github.com/stakeconomy/solanamonitoring
-[2] https://solana.stackexchange.com/questions/1625/is-there-a-free-api-to-pull-current-tps
-[3] https://bitquery.io/blockchains/solana-blockchain-api
+**Citations:**
+1. https://github.com/stakeconomy/solanamonitoring
+2. https://solana.stackexchange.com/questions/1625/is-there-a-free-api-to-pull-current-tps
+3. https://bitquery.io/blockchains/solana-blockchain-api
 [4] https://blog.quicknode.com/access-real-time-solana-data-3-tools-compared/
 [5] https://solana.com/docs/core/clusters
 
@@ -186,10 +185,10 @@ You can access social media metrics for your `SocialData` interface through the 
 
 By leveraging these APIs and manual methods, you can effectively gather the necessary social media metrics for your project on the Solana blockchain without incurring costs.
 
-Citations:
-[1] https://bitquery.io/blockchains/solana-blockchain-api
-[2] https://solana.com/news/blinks-blockchain-links-solana-actions
-[3] https://cryptoapis.io/blog/228-solana-now-supported-in-blockchain-events-exploration-of-all-crypto-apis-services-for-solana
+**Citations:**
+1. https://bitquery.io/blockchains/solana-blockchain-api
+2. https://solana.com/news/blinks-blockchain-links-solana-actions
+3. https://cryptoapis.io/blog/228-solana-now-supported-in-blockchain-events-exploration-of-all-crypto-apis-services-for-solana
 [4] https://www.alchemy.com/list-of/web3-social-dapps-on-solana
 [5] https://solana.com/solutions/actions
 [6] https://bitquery.io/blog/solana-api
@@ -302,3 +301,10 @@ To implement the `AggregatedTokenData` interface for a Solana token, you can gat
 - **Data Aggregation**: Implement efficient data aggregation methods to compile all metrics into your `AggregatedTokenData` structure.
 
 By utilizing these free resources effectively, you can successfully implement the `AggregatedTokenData` interface for a Solana token while keeping costs at zero. This approach requires some development effort but is entirely feasible with the available tools and APIs.
+
+**API Sources:**
+
+https://solscan.io/apis      (Smart Contract Verification Status)
+https://solana.com/docs/rpc  (Token Holder Analytics)
+https://docs.raydium.io/raydium/protocol/developers/apis (Liquidity Pool Details)
+Build yourself(BlueChip Scoring)
