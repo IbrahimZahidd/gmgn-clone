@@ -1,10 +1,11 @@
 Free Tech Stack for GMGN Clone
 
 Frontend
-    Vuejs (Free hosting on Vercel)
+    Nextjs (Free hosting on Vercel)
     Tailwind CSS (Styling)
     TradingView Lightweight Charts (Free charts)
     Web3.js (Blockchain integration)
+    ElasticSearch (For searching)
 Backend
     Vercel Serverless Functions (Free tier)
     Firestore Firebase (Free tier for database)
@@ -13,6 +14,7 @@ Blockchain Data
     Solana Web3.js (Free blockchain interaction)
     Solscan API (Free tier for Solana data)
     CoinGecko API (Free cryptocurrency prices) {https://docs.coingecko.com/v3.0.1/reference/introduction}
+    And many more...
 Hosting & Infrastructure
     Vercel (Free hosting)
     GitHub (Free source control)
