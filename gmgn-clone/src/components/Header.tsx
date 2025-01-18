@@ -241,19 +241,18 @@ const Header = () => {
             </DropdownMenuTrigger>
             <DropdownMenuContent
               align="end"
-              className="w-56 bg-[#18181B] border-[#27272A]"
+              className="w-56 bg-[#18181B] border-[#27272A] text-[#A1A1AA] hover:text-black hover:bg-[#27272A]"
             >
               <DropdownMenuSub>
                 <DropdownMenuSubTrigger className="flex items-center">
                   <Globe className="mr-2 h-4 w-4" />
                   <span>Language</span>
                 </DropdownMenuSubTrigger>
-                <DropdownMenuSubContent className="bg-[#18181B] border-[#27272A]">
+                <DropdownMenuSubContent className="bg-[#18181B] border-[#27272A] text-[#A1A1AA] hover:text-black">
                   {languages.map((lang) => (
                     <DropdownMenuItem
                       key={lang}
                       onClick={() => setSelectedLanguage(lang)}
-                      className="text-[#A1A1AA] hover:text-[#FAFAFA] hover:bg-[#27272A]"
                     >
                       {lang}
                     </DropdownMenuItem>
@@ -270,7 +269,7 @@ const Header = () => {
                 onClick={() => {
                   /* Handle alert settings */
                 }}
-                className="text-[#A1A1AA] hover:text-[#FAFAFA] hover:bg-[#27272A]"
+                className="hover:text-[#FAFAFA] hover:bg-[#27272A]"
               >
                 Alert settings
               </DropdownMenuItem>
