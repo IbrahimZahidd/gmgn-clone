@@ -162,10 +162,7 @@ const Footer = () => {
             />
             API
           </Link>
-        </div>
 
-        {/* Right section */}
-        <div className="flex items-center space-x-6">
           <button
             onClick={() => handleExternalLink("https://twitter.com/gmgnai")}
             className="text-[#A1A1AA] hover:text-[#FAFAFA]"
