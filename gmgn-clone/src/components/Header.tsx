@@ -1,5 +1,6 @@
 "use client";
 
+import { useChain } from "@/context/ChainContext";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -23,10 +24,10 @@ interface NavLink {
 }
 
 const Header = () => {
+  const { selectedChain, setSelectedChain } = useChain();
   const router = useRouter();
   // Use useEffect to handle client-side state initialization
   const [mounted, setMounted] = useState(false);
-  const [selectedChain, setSelectedChain] = useState<string>("SOL");
   const [isDarkMode, setIsDarkMode] = useState<boolean>(true);
   const [selectedLanguage, setSelectedLanguage] = useState<string>("English");
 
@@ -56,12 +57,12 @@ const Header = () => {
   };
 
   const chains = [
-    { id: "SOL", name: "Solana", icon: "/assets/chains/sol.png" },
-    { id: "TRON", name: "Tron", icon: "/assets/chains/tron.png" },
-    { id: "ETH", name: "Ethereum", icon: "/assets/chains/eth.png" },
-    { id: "BSC", name: "BSC", icon: "/assets/chains/bsc.png" },
-    { id: "BLAST", name: "Blast", icon: "/assets/chains/blast.png" },
-    { id: "BASE", name: "Base", icon: "/assets/chains/base.png" },
+    { id: "SOL", name: "Solana", icon: "/sol.png" },
+    { id: "TRON", name: "Tron", icon: "/tron.png" },
+    { id: "ETH", name: "Ethereum", icon: "/eth.png" },
+    { id: "BSC", name: "BSC", icon: "/bsc.png" },
+    { id: "BLAST", name: "Blast", icon: "/blast.png" },
+    { id: "BASE", name: "Base", icon: "/base.png" },
   ] as const;
 
   const languages = [
@@ -196,8 +197,8 @@ const Header = () => {
                     "/assets/chains/sol.png"
                   }
                   alt={selectedChain}
-                  width={20}
-                  height={20}
+                  width={30}
+                  height={30}
                   className="mr-2"
                   priority
                 />

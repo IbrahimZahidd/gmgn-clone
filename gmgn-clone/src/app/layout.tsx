@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Header from "@/components/Header";
 import "./globals.css";
+import Footer from "@/components/Footer";
+import { ChainProvider } from "@/context/ChainContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,12 +18,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <body className={`${inter.className} bg-black text-white`}>
-        <div className="flex flex-col min-h-screen">
-          <Header />
-          <main className="flex-grow bg-[#0D0D0D]">{children}</main>
-        </div>
+        <ChainProvider>
+          <div className="flex flex-col min-h-screen">
+            <Header />
+            <main className="flex-grow bg-[#0D0D0D] pb-14">{children}</main>
+            <Footer />
+          </div>
+        </ChainProvider>
       </body>
     </html>
   );
