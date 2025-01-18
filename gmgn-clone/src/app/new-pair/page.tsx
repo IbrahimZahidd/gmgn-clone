@@ -1,7 +1,11 @@
-export default function NewPairPage() {
+export default function NewPairPage({
+  searchParams,
+}: {
+  searchParams: { chain: string };
+}) {
   return (
-    <main className="container py-6">
-      <h1 className="text-4xl font-bold">New Pairs</h1>
-    </main>
+    <div className="pt-14">
+      <h1>New Pair Page for {searchParams.chain}</h1>
+    </div>
   );
 }

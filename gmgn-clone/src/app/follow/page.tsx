@@ -1,7 +1,11 @@
-export default function FollowPage() {
+export default function FollowPage({
+  searchParams,
+}: {
+  searchParams: { chain: string };
+}) {
   return (
-    <main className="container py-6">
-      <h1 className="text-4xl font-bold">Following</h1>
-    </main>
+    <div className="pt-14">
+      <h1>Follow Page for {searchParams.chain}</h1>
+    </div>
   );
 }

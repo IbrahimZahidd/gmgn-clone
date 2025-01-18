@@ -1,7 +1,11 @@
-export default function MemePage() {
+export default function MemePage({
+  searchParams,
+}: {
+  searchParams: { chain: string };
+}) {
   return (
-    <main className="container py-6">
-      <h1 className="text-4xl font-bold">Memes</h1>
-    </main>
+    <div className="pt-14">
+      <h1>Meme Page for {searchParams.chain}</h1>
+    </div>
   );
 }
