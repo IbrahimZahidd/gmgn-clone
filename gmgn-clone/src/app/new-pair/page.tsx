@@ -4,7 +4,7 @@ export default function NewPairPage({
   searchParams: { chain: string };
 }) {
   return (
-    <div className="pt-14">
+    <div>
       <h1>New Pair Page for {searchParams.chain}</h1>
     </div>
   );

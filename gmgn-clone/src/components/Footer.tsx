@@ -45,148 +45,156 @@ const Footer = () => {
   };
 
   return (
-    <footer className="fixed bottom-0 left-0 right-0 w-full h-14 bg-[#0D0D0D] border-t border-[#1A1B1E] z-50">
-      <div className="h-full px-4 flex items-center justify-between max-w-[1920px] mx-auto">
-        <div className="flex items-center space-x-6">
-          <button
-            onClick={() => setSniperDialogOpen(true)}
-            className="flex items-center text-sm text-[#A1A1AA] hover:text-[#FAFAFA]"
-          >
-            <Image
-              src="/sniper new.png"
-              alt="Sniper New"
-              width={20}
-              height={20}
-              className="mr-2"
-            />
-            Sniper New
-          </button>
+    <footer className="fixed bottom-0 left-0 w-full h-14 bg-[#0D0D0D] border-t border-[#1A1B1E] z-50">
+      <div className="w-full h-full px-4">
+        <div className="flex items-center justify-between h-full">
+          {/* Left section */}
+          <div className="flex items-center space-x-6">
+            <button
+              onClick={() => setSniperDialogOpen(true)}
+              className="flex items-center text-sm text-[#A1A1AA] hover:text-[#FAFAFA]"
+            >
+              <Image
+                src="/sniper new.png"
+                alt="Sniper New"
+                width={20}
+                height={20}
+                className="mr-2"
+              />
+              Sniper New
+            </button>
 
-          <button
-            onClick={() => setFollowingDialogOpen(true)}
-            className="flex items-center text-sm text-[#A1A1AA] hover:text-[#FAFAFA]"
-          >
-            <Image
-              src="/following.png"
-              alt="Following"
-              width={20}
-              height={20}
-              className="mr-2"
-            />
-            Following
-          </button>
+            <button
+              onClick={() => setFollowingDialogOpen(true)}
+              className="flex items-center text-sm text-[#A1A1AA] hover:text-[#FAFAFA]"
+            >
+              <Image
+                src="/following.png"
+                alt="Following"
+                width={20}
+                height={20}
+                className="mr-2"
+              />
+              Following
+            </button>
 
-          <Link
-            href={getChainBasedUrl("/referral")}
-            className="flex items-center text-sm text-[#A1A1AA] hover:text-[#FAFAFA]"
-          >
-            <Image
-              src="/refex.png"
-              alt="Refer"
-              width={20}
-              height={20}
-              className="mr-2"
-            />
-            Refer 0
-          </Link>
-        </div>
+            <Link
+              href={getChainBasedUrl("/referral")}
+              className="flex items-center text-sm text-[#A1A1AA] hover:text-[#FAFAFA]"
+            >
+              <Image
+                src="/refex.png"
+                alt="Refer"
+                width={20}
+                height={20}
+                className="mr-2"
+              />
+              Refer 0
+            </Link>
+          </div>
 
-        {/* Center section */}
-        <div className="flex items-center space-x-6">
-          <Link
-            href={getChainBasedUrl("/app")}
-            className="flex items-center text-sm text-[#A1A1AA] hover:text-[#FAFAFA]"
-          >
-            <Image
-              src="/app.png"
-              alt="Mobile APP"
-              width={20}
-              height={20}
-              className="mr-2"
-            />
-            Mobile APP
-          </Link>
+          {/* Center section */}
+          <div className="flex items-center space-x-6">
+            <Link
+              href={getChainBasedUrl("/app")}
+              className="flex items-center text-sm text-[#A1A1AA] hover:text-[#FAFAFA]"
+            >
+              <Image
+                src="/app.png"
+                alt="Mobile APP"
+                width={20}
+                height={20}
+                className="mr-2"
+              />
+              Mobile APP
+            </Link>
 
-          <Link
-            href="/index"
-            className="flex items-center text-sm text-[#A1A1AA] hover:text-[#FAFAFA]"
-          >
-            <Image
-              src="/academy.png"
-              alt="Academy"
-              width={20}
-              height={20}
-              className="mr-2"
-            />
-            Academy
-          </Link>
+            <Link
+              href="/index"
+              className="flex items-center text-sm text-[#A1A1AA] hover:text-[#FAFAFA]"
+            >
+              <Image
+                src="/academy.png"
+                alt="Academy"
+                width={20}
+                height={20}
+                className="mr-2"
+              />
+              Academy
+            </Link>
 
-          <Link
-            href={getChainBasedUrl("/about")}
-            className="flex items-center text-sm text-[#A1A1AA] hover:text-[#FAFAFA]"
-          >
-            <Image
-              src="/about.png"
-              alt="About"
-              width={20}
-              height={20}
-              className="mr-2"
-            />
-            About
-          </Link>
+            <Link
+              href={getChainBasedUrl("/about")}
+              className="flex items-center text-sm text-[#A1A1AA] hover:text-[#FAFAFA]"
+            >
+              <Image
+                src="/about.png"
+                alt="About"
+                width={20}
+                height={20}
+                className="mr-2"
+              />
+              About
+            </Link>
 
-          <Link
-            href={getChainBasedUrl("/bot")}
-            className="flex items-center text-sm text-[#A1A1AA] hover:text-[#FAFAFA]"
-          >
-            <Image
-              src="/bot.png"
-              alt="Bot"
-              width={20}
-              height={20}
-              className="mr-2"
-            />
-            Bot
-          </Link>
+            <Link
+              href={getChainBasedUrl("/bot")}
+              className="flex items-center text-sm text-[#A1A1AA] hover:text-[#FAFAFA]"
+            >
+              <Image
+                src="/bot.png"
+                alt="Bot"
+                width={20}
+                height={20}
+                className="mr-2"
+              />
+              Bot
+            </Link>
 
-          <Link
-            href="/index/cooperation-api-integrate-gmgn-eth-base-trading-api"
-            className="flex items-center text-sm text-[#A1A1AA] hover:text-[#FAFAFA]"
-          >
-            <Image
-              src="/api.png"
-              alt="API"
-              width={20}
-              height={20}
-              className="mr-2"
-            />
-            API
-          </Link>
+            <Link
+              href="/index/cooperation-api-integrate-gmgn-eth-base-trading-api"
+              className="flex items-center text-sm text-[#A1A1AA] hover:text-[#FAFAFA]"
+            >
+              <Image
+                src="/api.png"
+                alt="API"
+                width={20}
+                height={20}
+                className="mr-2"
+              />
+              API
+            </Link>
 
-          <button
-            onClick={() => handleExternalLink("https://twitter.com/gmgnai")}
-            className="text-[#A1A1AA] hover:text-[#FAFAFA]"
-          >
-            <Image src="/x.png" alt="Twitter" width={20} height={20} />
-          </button>
+            <button
+              onClick={() => handleExternalLink("https://twitter.com/gmgnai")}
+              className="text-[#A1A1AA] hover:text-[#FAFAFA]"
+            >
+              <Image src="/x.png" alt="Twitter" width={20} height={20} />
+            </button>
 
-          <button
-            onClick={() => handleExternalLink("https://t.me/gmgnai")}
-            className="text-[#A1A1AA] hover:text-[#FAFAFA]"
-          >
-            <Image src="/telegram.png" alt="Telegram" width={20} height={20} />
-          </button>
+            <button
+              onClick={() => handleExternalLink("https://t.me/gmgnai")}
+              className="text-[#A1A1AA] hover:text-[#FAFAFA]"
+            >
+              <Image
+                src="/telegram.png"
+                alt="Telegram"
+                width={20}
+                height={20}
+              />
+            </button>
 
-          <div className="flex items-center text-sm text-[#A1A1AA]">
-            <Image
-              src={`/${selectedChain.toLowerCase()}.png`}
-              alt={selectedChain}
-              width={20}
-              height={20}
-              className="mr-2"
-            />
-            {selectedChain}:{" "}
-            {chainPrices[selectedChain as keyof typeof chainPrices]}
+            <div className="flex items-center text-sm text-[#A1A1AA]">
+              <Image
+                src={`/${selectedChain.toLowerCase()}.png`}
+                alt={selectedChain}
+                width={20}
+                height={20}
+                className="mr-2"
+              />
+              {selectedChain}:{" "}
+              {chainPrices[selectedChain as keyof typeof chainPrices]}
+            </div>
           </div>
         </div>
       </div>

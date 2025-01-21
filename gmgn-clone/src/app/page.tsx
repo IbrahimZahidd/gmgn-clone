@@ -1,13 +1,17 @@
-import { redirect } from "next/navigation";
+"use client";
 
-// Type safety for supported chains
+import { useSearchParams } from "next/navigation"; // Import the useSearchParams hook
+
+// Define type for supported chains
 type SupportedChain = "sol" | "tron" | "bsc" | "blast" | "base" | "eth";
+
+import { TrendingCoinsView } from "@/components/TrendingCoinsView";
 
 // Component for SOL trending view
 const SolTrendingView = () => (
   <div className="p-4">
-    <h2 className="text-2xl font-bold mb-4">Solana Trending Pairs</h2>
-    {/* Add SOL-specific trending content here */}
+    <h2 className="text-2xl font-bold mb-6">SOL Trending Pairs</h2>
+    <TrendingCoinsView />
   </div>
 );
 
@@ -51,12 +55,12 @@ const BaseTrendingView = () => (
   </div>
 );
 
-export default function HomeTrendPage({
-  searchParams,
-}: {
-  searchParams: { chain?: string };
-}) {
-  const chain = searchParams.chain?.toLowerCase() as SupportedChain;
+export default function HomeTrendPage() {
+  // Use the `useSearchParams` hook to get search params
+  const searchParams = useSearchParams();
+  const chain = searchParams?.get("chain")?.toLowerCase() as
+    | SupportedChain
+    | undefined;
 
   // Render the appropriate trending view based on the chain
   return (

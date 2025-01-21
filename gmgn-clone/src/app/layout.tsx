@@ -19,11 +19,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-black text-white`}>
+      <body className={`${inter.className} bg-[#0D0D0D] text-white`}>
         <ChainProvider>
           <div className="flex flex-col min-h-screen">
             <Header />
-            <main className="flex-grow bg-[#0D0D0D] pb-14">{children}</main>
+            <main className="flex-grow">
+              <div className="w-full px-4 pt-14 pb-14">{children}</div>
+            </main>
             <Footer />
           </div>
         </ChainProvider>
