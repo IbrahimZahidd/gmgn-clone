@@ -15,11 +15,10 @@ const SolTrendingView = () => (
   </div>
 );
 
-// Component for ETH trending view
-const EthTrendingView = () => (
+// Component for ETH discover view
+const EthDiscoverView = () => (
   <div className="p-4">
     <h2 className="text-2xl font-bold mb-4">Ethereum Discovery Pairs</h2>
-    {/* Add ETH-specific trending content here */}
   </div>
 );
 
@@ -27,7 +26,6 @@ const EthTrendingView = () => (
 const BscTrendingView = () => (
   <div className="p-4">
     <h2 className="text-2xl font-bold mb-4">BSC Trending Pairs</h2>
-    {/* Add BSC-specific trending content here */}
   </div>
 );
 
@@ -35,7 +33,6 @@ const BscTrendingView = () => (
 const TronTrendingView = () => (
   <div className="p-4">
     <h2 className="text-2xl font-bold mb-4">Tron Trending Pairs</h2>
-    {/* Add TRON-specific trending content here */}
   </div>
 );
 
@@ -43,7 +40,6 @@ const TronTrendingView = () => (
 const BlastTrendingView = () => (
   <div className="p-4">
     <h2 className="text-2xl font-bold mb-4">Blast Trending Pairs</h2>
-    {/* Add Blast-specific trending content here */}
   </div>
 );
 
@@ -51,7 +47,6 @@ const BlastTrendingView = () => (
 const BaseTrendingView = () => (
   <div className="p-4">
     <h2 className="text-2xl font-bold mb-4">Base Trending Pairs</h2>
-    {/* Add Base-specific trending content here */}
   </div>
 );
 
@@ -66,7 +61,7 @@ export default function HomeTrendPage() {
   return (
     <div className="pt-14">
       {chain === "sol" && <SolTrendingView />}
-      {chain === "eth" && <EthTrendingView />}
+      {chain === "eth" && <EthDiscoverView />}
       {chain === "bsc" && <BscTrendingView />}
       {chain === "tron" && <TronTrendingView />}
       {chain === "blast" && <BlastTrendingView />}

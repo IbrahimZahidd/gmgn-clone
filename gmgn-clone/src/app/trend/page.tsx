@@ -1,3 +1,6 @@
+"use client";
+import { useSearchParams } from "next/navigation"; // Import the useSearchParams hook
+
 type SupportedChain = "eth";
 
 // Component for ETH trending view
@@ -8,12 +11,12 @@ const EthTrendingView = () => (
   </div>
 );
 
-export default function TrendPage({
-  searchParams,
-}: {
-  searchParams: { chain?: string };
-}) {
-  const chain = searchParams.chain?.toLowerCase() as SupportedChain;
+export default function TrendPage() {
+  // Use the `useSearchParams` hook to get search params
+  const searchParams = useSearchParams();
+  const chain = searchParams?.get("chain")?.toLowerCase() as
+    | SupportedChain
+    | undefined;
 
   // Render the appropriate trending view based on the chain
   return <div className="pt-14">{chain === "eth" && <EthTrendingView />}</div>;
