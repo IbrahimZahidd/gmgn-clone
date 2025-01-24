@@ -9,9 +9,15 @@ import { TrendingCoinsView } from "@/components/TrendingCoinsView";
 
 // Component for SOL trending view
 const SolTrendingView = () => (
-  <div className="p-4">
-    <h2 className="text-2xl font-bold mb-6">SOL Trending Pairs</h2>
-    <TrendingCoinsView />
+  <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="bg-white dark:bg-gray-900 rounded-lg shadow-sm">
+      <div className="p-6">
+        <h2 className="text-xl font-semibold mb-6 text-gray-900 dark:text-white">
+          SOL Trending Pairs
+        </h2>
+        <TrendingCoinsView />
+      </div>
+    </div>
   </div>
 );
 

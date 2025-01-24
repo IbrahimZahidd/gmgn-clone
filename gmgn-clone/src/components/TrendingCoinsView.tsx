@@ -1,5 +1,3 @@
-"use client";
-
 import { useTrendingCoins } from "@/hooks/useTrendingCoins";
 import Image from "next/image";
 
@@ -23,90 +21,86 @@ export const TrendingCoinsView = () => {
   }
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      {coins.map((coin) => (
-        <div
-          key={coin.id}
-          className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow"
-        >
-          <div className="flex items-center space-x-3">
-            <div className="relative w-10 h-10">
-              <Image
-                src={coin.image}
-                alt={coin.name}
-                fill
-                className="rounded-full object-cover"
-              />
-            </div>
-            <div>
-              <h3 className="font-semibold">{coin.name}</h3>
-              <p className="text-sm text-gray-500">Age: {coin.age}h</p>
-            </div>
-          </div>
-
-          <div className="mt-4 space-y-2">
-            <div className="flex justify-between">
-              <span className="text-gray-500">Price:</span>
-              <span className="font-medium">
+    <div className="overflow-x-auto">
+      <table className="w-full">
+        <thead>
+          <tr className="text-left text-sm text-gray-500 border-b border-gray-200">
+            <th className="py-3 px-4">Token</th>
+            <th className="py-3 px-4">Age</th>
+            <th className="py-3 px-4">Price</th>
+            <th className="py-3 px-4">Market Cap</th>
+            <th className="py-3 px-4">24h Volume</th>
+            <th className="py-3 px-4 text-center">1h</th>
+            <th className="py-3 px-4 text-center">24h</th>
+            <th className="py-3 px-4 text-center">7d</th>
+          </tr>
+        </thead>
+        <tbody>
+          {coins.map((coin) => (
+            <tr
+              key={coin.id}
+              className="border-b text-black border-gray-200 hover:bg-gray-50"
+            >
+              <td className="py-4 px-4">
+                <div className="flex items-center space-x-3">
+                  <div className="relative w-8 h-8">
+                    <Image
+                      src={coin.image}
+                      alt={coin.name}
+                      fill
+                      className="rounded-full object-cover"
+                    />
+                  </div>
+                  <span className="font-medium">{coin.name}</span>
+                </div>
+              </td>
+              <td className="py-4 px-4 text-gray-600">{coin.age}h</td>
+              <td className="py-4 px-4 text-gray-600">
                 ${coin.current_price.toLocaleString()}
-              </span>
-            </div>
-
-            <div className="flex justify-between">
-              <span className="text-gray-500">Market Cap:</span>
-              <span className="font-medium">
+              </td>
+              <td className="py-4 px-4 text-gray-600">
                 ${coin.market_cap.toLocaleString()}
-              </span>
-            </div>
-
-            <div className="flex justify-between">
-              <span className="text-gray-500">24h Volume:</span>
-              <span className="font-medium">
+              </td>
+              <td className="py-4 px-4 text-gray-600">
                 ${coin.total_volume.toLocaleString()}
-              </span>
-            </div>
-
-            <div className="grid grid-cols-3 gap-2 mt-3">
-              <div
-                className={`text-center p-1 rounded ${
-                  coin.price_change_percentage_1h >= 0
-                    ? "bg-green-100 text-green-800"
-                    : "bg-red-100 text-red-800"
-                }`}
-              >
-                <div className="text-xs">1h</div>
-                <div className="font-medium">
+              </td>
+              <td className="py-4 px-4">
+                <div
+                  className={`text-center p-1.5 rounded-md ${
+                    coin.price_change_percentage_1h >= 0
+                      ? "bg-green-100 text-green-800"
+                      : "bg-red-100 text-red-800"
+                  }`}
+                >
                   {coin.price_change_percentage_1h.toFixed(2)}%
                 </div>
-              </div>
-              <div
-                className={`text-center p-1 rounded ${
-                  coin.price_change_percentage_24h >= 0
-                    ? "bg-green-100 text-green-800"
-                    : "bg-red-100 text-red-800"
-                }`}
-              >
-                <div className="text-xs">24h</div>
-                <div className="font-medium">
+              </td>
+              <td className="py-4 px-4">
+                <div
+                  className={`text-center p-1.5 rounded-md ${
+                    coin.price_change_percentage_24h >= 0
+                      ? "bg-green-100 text-green-800"
+                      : "bg-red-100 text-red-800"
+                  }`}
+                >
                   {coin.price_change_percentage_24h.toFixed(2)}%
                 </div>
-              </div>
-              <div
-                className={`text-center p-1 rounded ${
-                  coin.price_change_percentage_7d >= 0
-                    ? "bg-green-100 text-green-800"
-                    : "bg-red-100 text-red-800"
-                }`}
-              >
-                <div className="text-xs">7d</div>
-                <div className="font-medium">
+              </td>
+              <td className="py-4 px-4">
+                <div
+                  className={`text-center p-1.5 rounded-md ${
+                    coin.price_change_percentage_7d >= 0
+                      ? "bg-green-100 text-green-800"
+                      : "bg-red-100 text-red-800"
+                  }`}
+                >
                   {coin.price_change_percentage_7d.toFixed(2)}%
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      ))}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 };
